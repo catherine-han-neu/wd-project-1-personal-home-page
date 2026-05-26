@@ -1,42 +1,66 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./css/index.css" />
     <title>Catherine Han - Home</title>
 
     <meta name="author" content="Catherine Han" />
     <meta
       name="description"
-      content="A Personal Home Page Project for Web Development Class at Northeastern University."
+      content="A personal homepage project for Web Development class at Northeastern University."
     />
     <link rel="icon" type="image/webp" href="./images/rat.webp" />
   </head>
+
   <body>
-    <h1>Catherine Han's Personal Home Page</h1>
+    <header class="site-header">
+      <button class="dark-mode-button" type="button">Toggle Dark Mode</button>
 
-    <div class="rat_image_container">
-      <img
-        class="rat_image"
-        src="./images/rat.webp"
-        alt="picture of a rat"
-        width="200"
-        height="200"
-      />
-    </div>
+      <h1>Catherine Han's Personal Home Page</h1>
+      <p class="subtitle">MSCS Student • Northeastern University • Web Development</p>
+    </header>
 
-    <p>
-      Hello, welcome to my Personal Home Page! This is a project for my Summer
-      2026 Web Development Course, which I am taking at Northeastern University
-      as part of my MSCS program. Feel free to check out the links below!
-    </p>
+    <main class="homepage-container">
+      <section class="hero-section">
+        <div class="rat_image_container">
+          <img
+            class="rat_image"
+            src="./images/rat.webp"
+            alt="Illustration of a rat"
+            width="220"
+            height="220"
+          />
+        </div>
 
-    <div class="nav_button_container">
-      <a href="./about.html">About Me</a>
+        <div class="intro-card">
+          <h2>Welcome!</h2>
+          <p>
+            Hello, welcome to my personal home page. This website was created
+            for my Summer 2026 Web Development course at Northeastern University
+            as part of my MSCS program.
+          </p>
 
-      <a href="./projects.html">Projects</a>
+          <p>
+            This page introduces who I am, what I am working on, and the
+            projects and experiences I want to share. Use the links below to
+            explore more about me.
+          </p>
 
-      <a href="./resume.html">Resume (AI-generated page)</a>
-    </div>
+          <nav class="nav_button_container" aria-label="Main navigation">
+            <a href="./about.html">About Me</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./resume.html">Resume / AI Page</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Catherine Han. Built for Web Development at Northeastern University.</p>
+    </footer>
 
     <script type="module" src="./js/darkmode.js"></script>
   </body>
